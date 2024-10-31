@@ -9,14 +9,20 @@
     <script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script>
   </head>
   <body class="bg-gray-100 text-gray-900 font-sans">
-    <header class="bg-blue-600 text-white shadow-lg">
-      <nav class="container mx-auto flex justify-between items-center">
-        <a href="#" class="text-2xl font-bold">JG</a>
-          <ul class="flex space-x-4">
-              <li><a href="#about" class="hover:text-blue-200">About</a></li>
-              <li><a href="#skills" class="hover:text-blue-200">Skills</a></li>
-              <li><a href="#projects" class="hover:text-blue-200">Projects</a></li>
-              <li><a href="#contact" class="hover:text-blue-200">Contact</a></li>
+    <header class="bg-white shadow-lg transition-colors duration-300">
+      <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-blue-600">JG</a>
+          <ul class="flex space-x-6 items-center">
+              <li><a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors">About</a></li>
+              <li><a href="#skills" class="text-gray-700 hover:text-blue-600 transition-colors">Skills</a></li>
+              <li><a href="#projects" class="text-gray-700 hover:text-blue-600 transition-colors">Projects</a></li>
+              <li><a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">Contact</a></li>
+              <button class="p-2 rounded-full hover:bg-gray-200 transition-colors" aria-label="Toggle Theme">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" stroke="currentColor" fill="none" stroke-width="1.5">
+                  <circle cx="12" cy="12" r="5"/>
+                  <path d="M12 1v2m0 18v2m-7.78-19.78l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2m-19.78 7.78l1.42-1.42m12.72-12.72l1.42-1.42"/>
+                </svg>
+              </button>
           </ul>
       </nav>
     </header>
@@ -25,7 +31,7 @@
     <main>
       <section id="hero" class="bg-blue-500 text-white py-20">
           <div class="container mx-auto px-6 text-center">
-              <h1 class="text-5xl font-bold mb-4">Juan Gonzalez</h1>
+              <h1 class="text-5xl font-bold mb-4">Welcome to Juan's Multiverse</h1>
               <p class="text-xl mb-8">Generalist & Multiskilled Professional</p>
               <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold hover:bg-blue-100 transition duration-300">Get in Touch</a>
               <a href="#about" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get to Know Me</a>
@@ -34,106 +40,97 @@
 
       <section id="about" class="py-20">
           <div class="container mx-auto px-6">
-              <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
-              <div class="flex flex-col md:flex-row items-center justify-center">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Juan Gonzalez" class="w-64 h-64 rounded-full object-cover mb-8 md:mb-0 md:mr-8">
+              <h2 class="text-3xl font-bold mb-8 text-center text-gray-900">Quick Bio</h2>
+              <div class="flex flex-col md:flex-row items-center justify-center gap-20 pb-4">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Juan Gonzalez" class="w-64 h-64 rounded-full object-cover shadow-lg ring-4 ring-blue-100 mb-8">
                   <div class="max-w-lg">
                       <p class="text-lg mb-4">
-                          Hi, I'm Juan Gonzalez, a versatile professional with a passion for learning and applying knowledge across various fields. My diverse skill set allows me to approach problems from multiple angles and find innovative solutions.
-                      </p>
-                      <p class="text-lg">
-                          With experience in technology, design, and business, I thrive in dynamic environments where I can leverage my multidisciplinary background to drive projects forward.
-                      </p>
-                      <p class="mb-4">
-                          Hi! I'm Juan Gonzalez, a passionate generalist with a diverse skill set ranging from project management to graphic design. I thrive on learning and adapting, and I believe that the intersection of different disciplines sparks the most innovative ideas.
-                      </p>
-                      <p class="mb-4">
-                          With a background in technology and arts, I enjoy tackling challenges that require a multifaceted approach. My journey has led me through various industries, allowing me to develop a unique perspective on problem-solving and creativity.
-                      </p>
-                      <p>
-                          When I'm not working on projects, you can find me exploring new technologies, reading about diverse subjects, or engaging in outdoor activities to keep my mind fresh and inspired.
-                      </p>
-                  </div>
+                          Hi, I'm Juan Gonzalez, a versatile professional with a passion for learning and applying knowledge across various fields. I thrive on learning and adapting, and I believe that the intersection of different disciplines sparks the most innovative ideas.
+                        </p>
+                        <p class="text-lg mb-4">
+                            With experience in technology, design, and business, I thrive in dynamic environments where I can leverage my multidisciplinary background to drive projects forward.
+                        </p>
+                        <p class="text-lg mb-4">
+                            With a background in technology and arts, I enjoy tackling challenges that require a multifaceted approach. My journey has led me through various industries, allowing me to develop a unique perspective on problem-solving.
+                        </p>
+                        <a href="/about" class="inline-flex items-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-700 text-white font-bold rounded-full transition-colors group">Learn More  -&gt;</a>
+                    </div>
               </div>
           </div>
       </section>
 
       <section id="skills" class="bg-gray-200 py-20">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-8 text-center">Skills</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="font-bold mb-2">Web Development</h3>
-                    <ul class="list-disc list-inside">
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                        <li>Node.js</li>
-                    </ul>
+          <h2 class="text-3xl font-bold mb-8 text-center">Skills & Expertise</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <a href="/skills/web-development" class="group">
+              <div class="bg-white p-8 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
+                <div class="flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l5-5zM10 18L6 12L5 8l5-5m7 9l-5 5zm0 0h-7a2 2 0 00-2 2v12a2 2 0 002 2h7a2 2 0 002-2V22a2 2 0 002-2H2a2 2 0 00-2-2H1A1 1 0 001 3v1a3 3 0 003 3h8a3 3 0 003-3v-1a1 1 0 100-2h-1a2 2 0 000 4h3a2 2 0 100-4H9a2 2 0 110 4h3z"></path>
+                  </svg>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="font-bold mb-2">Design</h3>
-                    <ul class="list-disc list-inside">
-                        <li>UI/UX Design</li>
-                        <li>Adobe Creative Suite</li>
-                        <li>Figma</li>
-                        <li>Sketch</li>
-                    </ul>
+                <h3 class="text-xl font-bold text-center mb-4">Web Development</h3>
+                <p class="text-gray-600 text-center mb-4">Full-stack development with modern frameworks and tools</p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">HTML/CSS</span>
+                  <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Python</span>
+                  <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">JavaScript</span>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="font-bold mb-2">Data Analysis</h3>
-                    <ul class="list-disc list-inside">
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>Tableau</li>
-                        <li>Excel</li>
-                    </ul>
+              </div>
+            </a>
+            <a href="/skills/design" class="group">
+              <div class="bg-white p-8 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
+                <div class="flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7.994a4.994 4.994 0 0 1 0.342 4.892c-2.88.646-3.894 2.007-3.894 3.893 0 1.886.6 3.552 1.667 4.005a8.489 8.489 0 0 1-2.992 3.751C10.94 17.418 9.88 16.98 8.882 16.78 4.895 14.47 2.925 13.90 1.972 12.834v-.835c4.412-1.182 10.037-1.462 13.333 0 .888.355 1.666-.07 2.417-1.407a2.322 2.322 0 0 0 0-1.591c-1.724-.244-2.813-.623-3.926-.927zM9.354 11.569C8.578 11.102 8.378 10.83 8.378 10.5c0-.329.228-.58.526-.579 1.113 0 2.122.345 3.112.84 1.018-.203 1.947-.326 2.872.087 3.634.686.074.836-.220.74-.835-.116-.683-1.153-.836-1.897 0-.655.457-1.89.832-2.138 1.047-.248 1.668-.738 1.669-1.706.008-.968-.222-1.947-.571-2.414C13.562 8.05 14.058 7.887 14.085 7.945v.057a.562.562 0 0 1 .99 0c.031 0 .08 0 .127 0Z"></path>
+                  </svg>
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="font-bold mb-2">Project Management</h3>
-                    <ul class="list-disc list-inside">
-                        <li>Agile Methodologies</li>
-                        <li>Scrum</li>
-                        <li>Jira</li>
-                        <li>Trello</li>
-                    </ul>
+                <h3 class="text-xl font-bold text-center mb-4">Design</h3>
+                <p class="text-gray-600 text-center mb-4">UI/UX design and visual communication</p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Figma</span>
+                  <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Adobe Suite</span>
+                  <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">UI/UX</span>
                 </div>
-            </div>
-        </div>
-        <div>
-          <h2 class="text-3xl font-bold mb-4">My Skills</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div class="bg-white p-4 rounded shadow">
-                  <h3 class="text-xl font-semibold mb-2">Project Management</h3>
-                  <p>Experience in leading cross-functional teams and managing timelines.</p>
-                  <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
-                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
-                  </div>
               </div>
-              <div class="bg-white p-4 rounded shadow">
-                  <h3 class="text-xl font-semibold mb-2">Graphic Design</h3>
-                  <p>Proficient in Adobe Creative Suite; skilled in creating visual content.</p>
-                  <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
-                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
-                  </div>
+            </a>
+            <a href="/skills/project-management" class="group">
+              <div class="bg-white p-8 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
+                <div class="flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7.994a4.994 4.994 0 0 1 0.342 4.892c-2.88.646-3.894 2.007-3.894 3.893 0 1.886.6 3.552 1.667 4.005a8.489 8.489 0 0 1-2.992 3.751C10.94 17.418 9.88 16.98 8.882 16.78 4.895 14.47 2.925 13.90 1.972 12.834v-.835c4.412-1.182 10.037-1.462 13.333 0 .888.355 1.666-.07 2.417-1.407a2.322 2.322 0 0 0 0-1.591c-1.724-.244-2.813-.623-3.926-.927zM9.354 11.569C8.578 11.102 8.378 10.83 8.378 10.5c0-.329.228-.58.526-.579 1.113 0 2.122.345 3.112.84 1.018-.203 1.947-.326 2.872.087 3.634.686.074.836-.220.74-.835-.116-.683-1.153-.836-1.897 0-.655.457-1.89.832-2.138 1.047-.248 1.668-.738 1.669-1.706.008-.968-.222-1.947-.571-2.414C13.562 8.05 14.058 7.887 14.085 7.945v.057a.562.562 0 0 1 .99 0c.031 0 .08 0 .127 0Z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold text-center mb-4">Project Management</h3>
+                <p class="text-gray-600 text-center mb-4">Agile methodologies and team leadership</p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Agile</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Scrum</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">Leadership</span>
+                </div>
               </div>
-              <div class="bg-white p-4 rounded shadow">
-                  <h3 class="text-xl font-semibold mb-2">Web Development</h3>
-                  <p>Knowledge of HTML, CSS, JavaScript; experience in building responsive websites.</p>
-                  <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
-                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
-                  </div>
+            </a>
+            <a href="/skills/content-writing" class="group">
+              <div class="bg-white p-8 rounded-lg shadow-md transform transition duration-300 hover:scale-105">
+                <div class="flex items-center justify-center mb-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.172 7.994a4.994 4.994 0 0 1 0.342 4.892c-2.88.646-3.894 2.007-3.894 3.893 0 1.886.6 3.552 1.667 4.005a8.489 8.489 0 0 1-2.992 3.751C10.94 17.418 9.88 16.98 8.882 16.78 4.895 14.47 2.925 13.90 1.972 12.834v-.835c4.412-1.182 10.037-1.462 13.333 0 .888.355 1.666-.07 2.417-1.407a2.322 2.322 0 0 0 0-1.591c-1.724-.244-2.813-.623-3.926-.927zM9.354 11.569C8.578 11.102 8.378 10.83 8.378 10.5c0-.329.228-.58.526-.579 1.113 0 2.122.345 3.112.84 1.018-.203 1.947-.326 2.872.087 3.634.686.074.836-.220.74-.835-.116-.683-1.153-.836-1.897 0-.655.457-1.89.832-2.138 1.047-.248 1.668-.738 1.669-1.706.008-.968-.222-1.947-.571-2.414C13.562 8.05 14.058 7.887 14.085 7.945v.057a.562.562 0 0 1 .99 0c.031 0 .08 0 .127 0Z"></path>
+                  </svg>
+                </div>
+                <h3 class="text-xl font-bold text-center mb-4">Content Writing</h3>
+                <p class="text-gray-600 text-center mb-4">Crafting engaging content across various platforms</p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm">Technical writing</span>
+                  <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm">Copywriting</span>
+                  <span class="px-3 py-1 bg-amber-100 text-amber-800 rounded-full text-sm">SEO</span>
+                </div>
               </div>
-              <div class="bg-white p-4 rounded shadow">
-                  <h3 class="text-xl font-semibold mb-2">Content Creation</h3>
-                  <p>Strong writing skills; adept at creating engaging blog posts and articles.</p>
-                  <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2">
-                      <div class="bg-blue-600 h-2.5 rounded-full" style="width: 75%"></div>
-                  </div>
-              </div>
+            </a>
           </div>
         </div>
       </section>
+      
 
       <section id="projects" class="py-20">
         <div class="container mx-auto px-6">
@@ -143,60 +140,89 @@
                   <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Project 1" class="w-full h-48 object-cover">
                   <div class="p-6">
                       <h3 class="font-bold text-xl mb-2">E-commerce Platform</h3>
-                      <p class="text-gray-700">Developed a full-stack e-commerce platform using React, Node.js, and MongoDB.</p>
+                      <p class="text-gray-700 mb-2">Developed a full-stack e-commerce platform using React, Node.js, and MongoDB.</p>
+                      <a href="#" class="text-blue-600 hover:text-blue-800">View Project</a>
                   </div>
               </div>
               <div class="bg-white rounded-lg shadow-md overflow-hidden">
                   <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Project 2" class="w-full h-48 object-cover">
                   <div class="p-6">
                       <h3 class="font-bold text-xl mb-2">Data Visualization Dashboard</h3>
-                      <p class="text-gray-700">Created an interactive dashboard for visualizing complex datasets using D3.js and Python.</p>
+                      <p class="text-gray-700 mb-2">Created an interactive dashboard for visualizing complex datasets using D3.js and Python.</p>
+                      <a href="#" class="text-blue-600 hover:text-blue-800">View Project</a>
                   </div>
               </div>
               <div class="bg-white rounded-lg shadow-md overflow-hidden">
                   <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Project 3" class="w-full h-48 object-cover">
                   <div class="p-6">
                       <h3 class="font-bold text-xl mb-2">Mobile App Design</h3>
-                      <p class="text-gray-700">Designed and prototyped a mobile app for a health and wellness startup using Figma.</p>
+                      <p class="text-gray-700 mb-2">Designed and prototyped a mobile app for a health and wellness startup using Figma.</p>
+                      <a href="#" class="text-blue-600 hover:text-blue-800">View Project</a>
                   </div>
-              </div>
-          </div>
-        </div>
-
-        <div>
-          <h2 class="text-3xl font-bold mb-4">My Projects</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              <div class="bg-white p-4 rounded shadow">
-                  <h3 class="text-xl font-semibold mb-2">E-commerce Redesign</h3>
-                  <p class="mb-2">Led the redesign of a major e-commerce platform, improving user experience and increasing conversions by 25%.</p>
-                  <a href="#" class="text-blue-600 hover:text-blue-800">View Project</a>
-              </div>
-              <div class="bg-white p-4 rounded shadow">
-                  <h3 class="text-xl font-semibold mb-2">Data Visualization Dashboard</h3>
-                  <p class="mb-2">Developed an interactive dashboard for visualizing complex data sets, used by over 500 analysts.</p>
-                  <a href="#" class="text-blue-600 hover:text-blue-800">View Project</a>
-              </div>
-              <div class="bg-white p-4 rounded shadow">
-                  <h3 class="text-xl font-semibold mb-2">Content Marketing Campaign</h3>
-                  <p class="mb-2">Created and executed a multi-channel content marketing strategy, resulting in a 40% increase in organic traffic.</p>
-                  <a href="#" class="text-blue-600 hover:text-blue-800">View Project</a>
               </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="bg-slate-600 text-white py-20">
+      <section class="py-20 bg-gray-50 dark:bg-gray-900 transition-colors">
+        <div class="container mx-auto px-6">
+          <h2 class="text-3xl font-bold mb-12 text-center text-gray-900 dark:text-white">
+            What People Say
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="card bg-base-100 shadow-xl dark:bg-gray-800">
+                <div class="card-body">
+                  <p class="text-gray-600 dark:text-gray-300 mb-6">"Juan's ability to handle multiple projects was unlike anything I'd seen before. He delivered high-quality work consistently across all domains."</p>
+                  <div class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Sarah Chen" class="w-12 h-12 rounded-full object-cover mr-4">
+                    <div>
+                      <h3 class="font-semibold text-gray-900 dark:text-white">Sarah Chen</h3>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">CEO, TechStart Inc.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 shadow-xl dark:bg-gray-800">
+                <div class="card-body">
+                  <p class="text-gray-600 dark:text-gray-300 mb-6">"Working with Juan was a game-changer for our design process. His multidisciplinary approach brought fresh perspectives to every project."</p>
+                  <div class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Marcus Rodriguez" class="w-12 h-12 rounded-full object-cover mr-4">
+                    <div>
+                      <h3 class="font-semibold text-gray-900 dark:text-white">Marcus Rodriguez</h3>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">Design Director, CreativeFlow</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card bg-base-100 shadow-xl dark:bg-gray-800">
+                <div class="card-body">
+                  <p class="text-gray-600 dark:text-gray-300 mb-6">"Juan's technical expertise combined with his project management skills made our collaboration incredibly efficient and successful."</p>
+                  <div class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Emily Thompson" class="w-12 h-12 rounded-full object-cover mr-4">
+                    <div>
+                      <h3 class="font-semibold text-gray-900 dark:text-white">Emily Thompson</h3>
+                      <p class="text-sm text-gray-500 dark:text-gray-400">Product Manager, InnovateLab</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Repeat for other testimonials -->
+          </div>
+        </div>
+      </section>
+      
+
+      <section id="contact" class="bg-blue-600 text-white py-20">
         <div class="container mx-auto px-6">
           <h2 class="text-3xl font-bold mb-8 text-center">Get in touch</h2>
         </div>
 
-        <div class="mt-8">
+        <div class="flex flex-col items-center mt-8">
           <h3 class="text-xl font-semibold mb-4">Connect with me</h3>
           <div class="flex space-x-4">
-              <a href="#" class="text-blue-600 hover:text-blue-800">Facebook</a>
-              <a href="#" class="text-blue-600 hover:text-blue-800">Twitter</a>
-              <a href="#" class="text-blue-600 hover:text-blue-800">LinkedIn</a>
-              <a href="#" class="text-blue-600 hover:text-blue-800">GitHub</a>
+              <a href="https://twitter.com/juanfrank77" class="text-white hover:text-blue-800">Twitter</a>
+              <a href="https://www.linkedin.com/in/juanfrank77/?locale=en_US" class="text-white hover:text-blue-800">LinkedIn</a>
+              <a href="https://github.com/juanfrank77" class="text-white hover:text-blue-800">GitHub</a>
           </div>
         </div>
       </section>
